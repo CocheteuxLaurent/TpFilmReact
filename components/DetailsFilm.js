@@ -1,10 +1,12 @@
 import React from "react";
-import View, { Text } from "react-native";
+import { Text, View } from "react-native";
 
-const DetailsFilm = () => {
+const DetailsFilm = ({ route }) => {
+    const { data } = route.params;
+
     return (
         <View>
-            <Text>Voici un simple text</Text>
+            <Text>{data.Year}</Text>
         </View>
     );
 
