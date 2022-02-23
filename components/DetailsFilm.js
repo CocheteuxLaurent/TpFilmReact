@@ -16,6 +16,9 @@ const DetailsFilm = ({ route }) => {
             <View style={styles.text}>
                 <Text>{data.Type}</Text>
             </View>
+            <View style={styles.text}>
+                <Text>{data.Actors}</Text>
+            </View>
         </View>
 
     );

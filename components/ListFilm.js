@@ -46,6 +46,7 @@ const ListFilm = ({ route, navigation }) => {
                             <View>
                                 <Text style={{ fontWeight: 'bold', margin: 10 }}>{item.Title}</Text>
                                 <Image style={styles.poster} source={{ uri: `${item.Poster}` }} resizeMode='contain'></Image>
+
                             </View>
                         </Pressable>
                     }

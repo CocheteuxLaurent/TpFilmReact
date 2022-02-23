@@ -10,6 +10,7 @@ const ItemsCard = ({ item }) => {
                 <Text>{item.item.Title}</Text>
             </View>
 
+
         </View>
     )
 }
