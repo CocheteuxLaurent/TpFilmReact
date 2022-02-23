@@ -39,7 +39,7 @@ const ListFilm = ({ route, navigation }) => {
                         <Pressable
                             onPress={() => {
                                 navigation.navigate('DetailsFilm', {
-                                    data: item
+                                    data: item.imdbID
                                 }
                                 )
                             }}>
