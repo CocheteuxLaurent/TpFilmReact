@@ -49,10 +49,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     txtBouton: {
-        padding: 10,
         fontSize: 20,
         fontWeight: 'bold',
         color: 'white',
+        borderRadius: 10,
+        elevation: 3,
+        backgroundColor: '#F9DC0E',
+        margin: 15,
+        padding: 8,
 
     }
 })

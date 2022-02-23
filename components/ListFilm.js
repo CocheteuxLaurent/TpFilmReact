@@ -33,7 +33,7 @@ const ListFilm = ({ route, navigation }) => {
 
 
             {isLoading ? <Text>chargement en cours ....</Text> :
-                <FlatList
+                <FlatList style={styles.list}
                     data={data}
                     renderItem={({ item }) =>
                         <Pressable
@@ -44,7 +44,9 @@ const ListFilm = ({ route, navigation }) => {
                                 )
                             }}>
                             <View>
-                                <Text style={{ fontWeight: 'bold', margin: 10 }}>{item.Title}</Text>
+                                <Text style={{
+                                    fontWeight: 'bold', margin: 10
+                                }}>{item.Title}</Text>
                                 <Image style={styles.poster} source={{ uri: `${item.Poster}` }} resizeMode='contain'></Image>
 
                             </View>
@@ -71,6 +73,11 @@ const styles = StyleSheet.create({
     poster: {
         height: 100,
         borderRadius: 10,
+    },
+    list: {
+        backgroundColor: '#3DA6FF',
+        padding: 15,
+
     }
     /* card: {
          flexDirection: 'column',

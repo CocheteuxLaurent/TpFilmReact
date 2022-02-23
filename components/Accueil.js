@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     txt: {
-        padding: 10,
+        margin: 15,
         fontSize: 20,
         fontWeight: 'bold',
         color: 'white',
@@ -51,7 +51,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         color: 'white',
-
+        borderRadius: 10,
+        elevation: 10,
+        backgroundColor: '#F9DC0E',
+        padding: 8,
     }
 
 });
