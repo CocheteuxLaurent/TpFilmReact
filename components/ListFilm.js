@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },
     poster: {
         height: 100,
-
+        borderRadius: 10,
     }
     /* card: {
          flexDirection: 'column',

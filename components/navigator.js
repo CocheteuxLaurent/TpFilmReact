@@ -20,19 +20,43 @@ export default class HomeNavigator extends React.Component {
 
                     name="Accueil"
                     component={Accueil}
-                    options={{ title: 'Accueil', headerShown: true, headerTintColor: '#3DA6FF' }}
+                    options={{
+                        title: 'Accueil',
+                        headerStyle: {
+                            backgroundColor: '#3DA6FF',
+
+                        },
+                        headerTitleAlign: "center",
+                        headerShown: true, headerTintColor: '#fff',
+                    }}
                 />
                 <Stack.Screen
 
                     name="Recherche"
                     component={Recherche}
-                    options={{ title: 'Recherche de Film', headerShown: true }}
+                    options={{
+                        title: 'Recherche de Film',
+                        headerStyle: {
+                            backgroundColor: '#3DA6FF',
+
+                        },
+                        headerTitleAlign: "center",
+                        headerShown: true, headerTintColor: '#fff',
+                    }}
                 />
                 <Stack.Screen
 
                     name="ListFilm"
                     component={ListFilm}
-                    options={{ title: 'Liste Des Film Rechercher', headerShown: true }}
+                    options={{
+                        title: 'Liste Des Film Rechercher',
+                        headerStyle: {
+                            backgroundColor: '#3DA6FF',
+
+                        },
+                        headerTitleAlign: "center",
+                        headerShown: true, headerTintColor: '#fff',
+                    }}
                 />
                 <Stack.Screen
 
