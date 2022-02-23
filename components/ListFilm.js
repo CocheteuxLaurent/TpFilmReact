@@ -77,6 +77,9 @@ const styles = StyleSheet.create({
     list: {
         backgroundColor: '#3DA6FF',
         padding: 15,
+        flex: 1,
+        flexDirection: 'row',
+        width: 200,
 
     }
     /* card: {
