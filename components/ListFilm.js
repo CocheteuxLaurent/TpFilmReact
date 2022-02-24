@@ -28,34 +28,34 @@ const ListFilm = ({ route, navigation }) => {
 
     return (
         <View style={styles.container}>
-            <View style={styles.card}>
-            </View>
+
 
 
             {isLoading ? <Text>chargement en cours ....</Text> :
-                <FlatList style={styles.list}
-                    data={data}
-                    renderItem={({ item }) =>
-                        <Pressable
-                            onPress={() => {
-                                navigation.navigate('DetailsFilm', {
-                                    data: item.imdbID
-                                }
-                                )
-                            }}>
-                            <View>
-                                <Text style={{
-                                    fontWeight: 'bold', margin: 10
-                                }}>{item.Title}</Text>
-                                <Image style={styles.poster} source={{ uri: `${item.Poster}` }} resizeMode='contain'></Image>
+                <View>
+                    <FlatList
+                        data={data}
+                        renderItem={({ item }) =>
+                            <Pressable
+                                onPress={() => {
+                                    navigation.navigate('DetailsFilm', {
+                                        imdbID: item.imdbID
+                                    }
+                                    )
+                                }}>
+                                <View style={styles.card}>
+                                    <Text style={{
+                                        fontWeight: 'bold', margin: 10
+                                    }}>{item.Title}</Text>
+                                    <Image style={styles.poster} source={{ uri: `${item.Poster}` }} resizeMode='contain'></Image>
 
-                            </View>
-                        </Pressable>
-                    }
+                                </View>
+                            </Pressable>
+                        }
 
-                >
-                </FlatList >
-
+                    >
+                    </FlatList >
+                </View>
             }
 
 
@@ -69,34 +69,22 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
+        flexDirection: 'column',
     },
     poster: {
         height: 100,
         borderRadius: 10,
     },
-    list: {
-        backgroundColor: '#3DA6FF',
-        padding: 15,
-        flex: 1,
+    card: {
         flexDirection: 'row',
-        width: 200,
+        width: 370,
+        backgroundColor: '#F9DC0E',
+        margin: 10,
+        //justifyContent: 'space-around',
+        alignItems: 'center',
 
-    }
-    /* card: {
-         flexDirection: 'column',
-         alignItems: 'center',
-         shadowColor: 'black',
-         padding: 30,
- 
-     },
-     container2: {
-         borderTopRightRadius: 40,
-         borderTopLeftRadius: 40,
-         alignItems: 'center',
-         backgroundColor: 'white',
- 
-     }
-     */
+    },
+
 })
 
 export default ListFilm

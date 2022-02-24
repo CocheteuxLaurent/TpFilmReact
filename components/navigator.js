@@ -62,7 +62,15 @@ export default class HomeNavigator extends React.Component {
 
                     name="DetailsFilm"
                     component={DetailsFilm}
-                    options={{ title: 'Details Film', headerShown: true }}
+                    options={{
+                        title: 'Details Film', headerShown: true,
+                        headerStyle: {
+                            backgroundColor: '#3DA6FF',
+
+                        },
+                        headerTitleAlign: "center",
+                        headerShown: true, headerTintColor: '#fff',
+                    }}
                 />
 
 
