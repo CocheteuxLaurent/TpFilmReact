@@ -33,9 +33,11 @@ const ListFilm = ({ route, navigation }) => {
 
             {isLoading ? <Text>chargement en cours ....</Text> :
                 <View>
+
                     <FlatList
                         data={data}
                         renderItem={({ item }) =>
+                            // <View style={styles.card}>
                             <Pressable
                                 onPress={() => {
                                     navigation.navigate('DetailsFilm', {
@@ -45,17 +47,18 @@ const ListFilm = ({ route, navigation }) => {
                                 }}>
                                 <View style={styles.card}>
                                     <Text style={{
-                                        fontWeight: 'bold', margin: 10
+                                        fontWeight: 'bold', margin: 10, color: 'white', textAlign: 'center',
                                     }}>{item.Title}</Text>
+
                                     <Image style={styles.poster} source={{ uri: `${item.Poster}` }} resizeMode='contain'></Image>
 
                                 </View>
                             </Pressable>
+                            // </View>   
                         }
-
                     >
                     </FlatList >
-                </View>
+                </View >
             }
 
 
@@ -76,14 +79,15 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     card: {
-        flexDirection: 'row',
-        width: 370,
-        backgroundColor: '#F9DC0E',
+        flexDirection: 'column',
+        backgroundColor: 'white',
         margin: 10,
-        //justifyContent: 'space-around',
-        alignItems: 'center',
+        padding: 10,
+        //alignItems: 'center',
+        alignContent: 'center',
+        backgroundColor: '#F9DC0E',
 
-    },
+    }
 
 })
 

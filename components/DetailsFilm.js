@@ -35,7 +35,14 @@ const DetailsFilm = ({ route }) => {
 
                     <Image style={styles.poster} source={{ uri: `${data.Poster}` }} resizeMode='contain'></Image>
 
-                    <Text>{data.Title}</Text>
+                    <Text style={styles.text}>{data.Title}</Text>
+
+                    <Text style={styles.text}>{data.Year}</Text>
+
+                    <Text style={styles.text}>{data.Type}</Text>
+
+                    <Text style={styles.text}>{data.Actors}</Text>
+
 
                 </View>
 
@@ -61,7 +68,9 @@ const styles = StyleSheet.create({
     },
     text: {
         padding: 10,
-        alignItems: "center",
+        fontSize: 15,
+        fontWeight: 'bold',
+        textAlign: 'center'
     }
 })
 
