@@ -41,8 +41,11 @@ const DetailsFilm = ({ route }) => {
 
                     <Text style={styles.text}>{data.Type}</Text>
 
+                    <Text style={styles.text}>{data.Runtime}</Text>
+
                     <Text style={styles.text}>{data.Actors}</Text>
 
+                    <Text style={styles.text}>{data.Director}</Text>
 
                 </View>
 
