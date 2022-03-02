@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
         padding: 10,
         //alignItems: 'center',
         alignContent: 'center',
-        backgroundColor: '#F9DC0E',
+        backgroundColor: '#3DA6FF',
 
     }
 
