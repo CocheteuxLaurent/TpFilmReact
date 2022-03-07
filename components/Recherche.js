@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, TextInput, Pressable, Text, Image } from 'react-native';
 import Voice from 'react-native-voice';
+import { TouchableOpacity } from "react-native-web";
 
 const Form = ({ navigation }) => {
     const [pitch, setPitch] = useState('');
@@ -126,6 +127,7 @@ const Form = ({ navigation }) => {
 
 
 
+
             <Pressable onPress={() => {
                 navigation.navigate('ListFilm', {
                     nomFilm: myValueFilm,
@@ -139,11 +141,17 @@ const Form = ({ navigation }) => {
 
                 </View>
             </Pressable>
-            <Image style={{ width: 50, height: 50 }} source={require('../assets/microphone-forme-noire.png')}></Image>
         </View >
 
     );
 }
+//<Image style={{ width: 20, height: 20 }} source={require('../assets/microphone-forme-noire.png')}></Image>
+/*<View>
+<TouchableOpacity>
+    <Image style={{ width: 20, height: 20 }} source={require('../assets/microphone-forme-noire.png')}></Image>
+</TouchableOpacity>
+</View>
+*/
 //style={{ borderRadius: 15, backgroundColor: '#6CBAFC', padding: 5, top: 50 }}
 const styles = StyleSheet.create({
     txtInput: {
