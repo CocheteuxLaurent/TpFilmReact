@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, View, TextInput, Pressable, Text, Image, Vibration } from 'react-native';
+import { StyleSheet, View, TextInput, Pressable, Text, Image, Vibration, TouchableOpacity } from 'react-native';
 //import Voice from 'react-native-voice';
 //import { TouchableOpacity } from "react-native";
 //import * as Permissions from "expo-permissions";
@@ -37,7 +37,9 @@ const Form = ({ navigation }) => {
 
             />
 
-            <Pressable onPress={() => {
+
+
+            <TouchableOpacity onPress={() => {
                 if (myValueFilm == '') {
                     alert('Il faut entrer un film !!!')
                 } else {
@@ -48,14 +50,19 @@ const Form = ({ navigation }) => {
                     })
                 }
             }}>
+
                 <View >
+                    <View >
 
-                    <Text style={styles.txtBouton} >
-                        Rechercher
-                    </Text>
+                        <Text style={styles.txtBouton}>
+                            Rechercher
+                        </Text>
 
+
+                    </View>
                 </View>
-            </Pressable>
+            </TouchableOpacity >
+
         </View >
 
     );
@@ -76,10 +83,11 @@ const styles = StyleSheet.create({
         width: 250,
         height: 60,
         color: 'white',
+        borderColor: 'white',
     },
     Container: {
         flex: 1,
-        backgroundColor: '#3DA6FF',
+        backgroundColor: '#212040',
         alignItems: 'center',
         textAlign: 'center',
         flexDirection: 'column',
@@ -91,7 +99,7 @@ const styles = StyleSheet.create({
         color: 'white',
         borderRadius: 10,
         elevation: 3,
-        backgroundColor: '#F9DC0E',
+        backgroundColor: '#97999A',
         margin: 15,
         padding: 8,
 

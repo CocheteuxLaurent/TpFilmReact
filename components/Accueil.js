@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Pressable, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 
 const Accueil = ({ navigation }) => {
@@ -18,6 +18,7 @@ const Accueil = ({ navigation }) => {
                             Entrer
                         </Text>
 
+
                     </View>
                 </View>
             </TouchableOpacity >
@@ -34,7 +35,7 @@ const Accueil = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#3DA6FF',
+        backgroundColor: '#212040',
         alignItems: 'center',
         textAlign: 'center',
         flexDirection: 'column',
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
         color: 'white',
         borderRadius: 10,
         elevation: 10,
-        backgroundColor: '#F9DC0E',
+        backgroundColor: '#97999A',
         padding: 8,
     }
 

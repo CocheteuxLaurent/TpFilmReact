@@ -23,7 +23,7 @@ export default class HomeNavigator extends React.Component {
                     options={{
                         title: 'Accueil',
                         headerStyle: {
-                            backgroundColor: '#3DA6FF',
+                            backgroundColor: '#97999A',
 
                         },
                         headerTitleAlign: "center",
@@ -37,7 +37,7 @@ export default class HomeNavigator extends React.Component {
                     options={{
                         title: 'Recherche de Film',
                         headerStyle: {
-                            backgroundColor: '#3DA6FF',
+                            backgroundColor: '#97999A',
 
                         },
                         headerTitleAlign: "center",
@@ -51,7 +51,7 @@ export default class HomeNavigator extends React.Component {
                     options={{
                         title: 'Liste Des Film Rechercher',
                         headerStyle: {
-                            backgroundColor: '#3DA6FF',
+                            backgroundColor: '#97999A',
 
                         },
                         headerTitleAlign: "center",
@@ -65,7 +65,7 @@ export default class HomeNavigator extends React.Component {
                     options={{
                         title: 'Details Film', headerShown: true,
                         headerStyle: {
-                            backgroundColor: '#3DA6FF',
+                            backgroundColor: '#97999A',
 
                         },
                         headerTitleAlign: "center",

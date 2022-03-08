@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         //justifyContent: 'center',
-        //backgroundColor: '#3DA6FF',
+        backgroundColor: '#212040',
     },
     poster: {
         height: 250,
@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
         padding: 10,
         fontSize: 15,
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'white',
     }
 })
 

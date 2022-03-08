@@ -73,6 +73,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
         flexDirection: 'column',
+        backgroundColor: '#97999A',
+
     },
     poster: {
         height: 100,
@@ -80,13 +82,11 @@ const styles = StyleSheet.create({
     },
     card: {
         flexDirection: 'column',
-        backgroundColor: 'white',
         margin: 10,
         padding: 10,
-        //alignItems: 'center',
         alignContent: 'center',
-        backgroundColor: '#3DA6FF',
-
+        backgroundColor: '#212040',
+        borderRadius: 20,
     }
 
 })
