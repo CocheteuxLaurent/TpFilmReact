@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { View, FlatList, Pressable, StyleSheet, Text, Image } from "react-native";
-import { ItemsCard } from './Items';
 
 const ListFilm = ({ route, navigation }) => {
     const { nomFilm } = route.params;

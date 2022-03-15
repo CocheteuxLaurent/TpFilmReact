@@ -1,9 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Accueil from './Accueil';
-import Recherche from './Recherche';
-import ListFilm from './ListFilm';
-import DetailsFilm from './DetailsFilm';
+import Accueil from '../pages/Accueil';
+import Recherche from '../pages/Recherche';
+import ListFilm from '../pages/ListFilm';
+import DetailsFilm from '../pages/DetailsFilm';
 
 
 const Stack = createNativeStackNavigator();
